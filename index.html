@@ -30,79 +30,21 @@
         </header>
         <main class="container mt-5">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4" v-for="(album, index) in dischi" :key="index">
                     <div class="card mb-5" style="width: 18rem;">
-                        <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg"
-                            alt="L.jpg">
+                        <img class="card-img-top" :src="album.poster">
+                        alt="L.jpg">
                         <div class="card-body">
-                            <h3 class="card-title text-center text-light">nome disco</h3>
-                            <p class="text-center text-light"> band</p>
-                            <h4 class="text-center text-light">anno</h4>
+                            <h3 class="card-title text-center text-light">{{album.title}}</h3>
+                            <p class="text-center text-light"> {{album.author}}</p>
+                            <h4 class="text-center text-light">{{album.year}}</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card mb-5" style="width: 18rem;">
-                        <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg"
-                            alt="L.jpg">
-                        <div class="card-body">
-                            <h3 class="card-title text-center text-light">nome disco</h3>
-                            <p class="text-center text-light"> band</p>
-                            <h4 class="text-center text-light">anno</h4>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card mb-5" style="width: 18rem;">
-                        <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg"
-                            alt="L.jpg">
-                        <div class="card-body text-center">
-                            <h3 class="card-title text-center text-light">nome disco</h3>
-                            <p class="text-center text-light"> band</p>
-                            <h4 class="text-center text-light">anno</h4>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="card mb-5" style="width: 18rem;">
-                        <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg"
-                            alt="L.jpg">
-                        <div class="card-body text-center">
-                            <h3 class="card-title text-center text-light">nome disco</h3>
-                            <p class="text-center text-light"> band</p>
-                            <h4 class="text-center text-light">anno</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card mb-5" style="width: 18rem;">
-                        <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg"
-                            alt="L.jpg">
-                        <div class="card-body text-center">
-                            <h3 class="card-title text-center text-light">nome disco</h3>
-                            <p class="text-center text-light"> band</p>
-                            <h4 class="text-center text-light">anno</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card mb-5" style="width: 18rem;">
-                        <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg"
-                            alt="L.jpg">
-                        <div class="card-body">
-                            <h3 class="card-title text-center text-light">nome disco</h3>
-                            <p class="text-center text-light"> band</p>
-                            <h4 class="text-center text-light">anno</h4>
-
-                        </div>
-                    </div>
-                </div>
             </div>
     </div>
+
 
 
 

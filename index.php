@@ -1,4 +1,6 @@
 <?php
+$jsonDir = __DIR__ . '/cartella-dischi-json/dischi.json/';
+
 $jsonConv = file_get_contents('dischi.json'); //faccio leggere il file json a php
 
 header('Content-Type application/json');
