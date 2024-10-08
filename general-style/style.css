@@ -1,3 +1,13 @@
-div {
-    text-align: center;
+header {
+    height: 70px;
+    background-color: #0E171E;
+}
+
+body {
+    background-color: #1D2D3C;
+}
+
+.card {
+    background-color: #0E171E;
+
 }
